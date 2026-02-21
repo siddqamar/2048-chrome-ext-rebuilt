@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "2048 Puzzle",
+  "version": "1.0",
+  "description": "A classic 2048 sliding tile puzzle game.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
+}

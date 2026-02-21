@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="logo-box">
+                    <button id="menu-btn" class="btn">Menu</button>
+                </div>
+                <div class="controls-box">
+                    <button id="restart-btn" class="btn icon-btn">↺</button>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <div class="label">SCORE</div>
+                        <div id="score">0</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="label">BEST</div>
+                        <div id="best-score">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <button id="undo-btn" class="btn undo-btn">
+                    <span>↺</span> Undo
+                </button>
+                <button id="help-btn" class="btn icon-btn small">?</button>
+                <button id="shop-btn" class="btn icon-btn green">🛒</button>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div id="game-board" class="grid">
+                <!-- Grid cells (16) -->
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                
+                <div id="tile-container"></div>
+            </div>
+
+            <div id="game-over" class="overlay hidden">
+                <h1>Game Over!</h1>
+                <div class="overlay-btns">
+                    <button id="try-again-btn" class="btn large">Try again</button>
+                    <button id="overlay-undo-btn" class="btn large green undo-split">
+                        <span class="undo-icon">↺</span> Undo <span class="shop-mini">🛒</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="social-icons">
+                <span class="icon">🤖</span>
+                <span class="icon">💬</span>
+                <span class="icon">f</span>
+                <span class="icon">🌐</span>
+                <span class="icon">✉</span>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
